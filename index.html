@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style8.css">
+
+  <style>
+    .card2 {
+      margin-left: 20px;
+      position: relative;
+      box-sizing: border-box;
+      width: 200px;
+      height: 240px;
+      padding: 22px;
+      transition: transform .4s ease;
+      box-shadow: 0 0 0 1px #e4dfd2,
+        0 14px 28px -14px #1a140050;
+    }
+
+    .card2:hover {
+      transform: translateY(-4px);
+    }
+
+    .line {
+      position: absolute;
+      background-color: black;
+      transition: all .4s ease;
+    }
+
+    .top {
+      inset: 0 auto auto 0;
+      width: 0;
+      height: 2px;
+    }
+
+    .right {
+      inset: 0 0 auto auto;
+      width: 2px;
+      height: 0;
+      transition-delay: 0.15s;
+    }
+
+    .bottom {
+      inset: auto 0 0 auto;
+      width: 0;
+      height: 2px;
+      transition-delay: .3s;
+    }
+
+    .left {
+      inset: auto auto 0 0;
+      width: 2px;
+      height: 0;
+      transition-delay: 0.45s;
+    }
+
+    .card2:hover .top,
+    .card2:hover .bottom {
+      width: 100%;
+    }
+
+    .card2:hover .left,
+    .card2:hover .right {
+      height: 100%;
+    }
+
+    .parag {
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- {===1st card===} -->
+  <div class="card">
+    <h2> ALISHA </h2>
+  </div>
+
+
+  <!-- {===2nd card===} -->
+  <div class="card2">
+    <p> 01 - PLAN </p><br><br><br><br>
+    <h2> Hover Me </h2><br>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.nemo. </p>
+    <i class="line top"></i>
+    <i class="line right"></i>
+    <i class="line bottom"></i>
+    <i class="line left"></i>
+  </div>
+
+
+  <!-- {===3rd card===} -->
+
+  <div class="card3">
+    <div class="card-inner">
+
+      <div class="front"> <img src="beautyandthebeast2.png" style="width: 200px;
+                    height: 300px;border-radius: 10px;"> </div>
+
+      <div class="back"> <img src="beautyandthebeast.png" style="width: 200px;
+              height: 300px;border-radius: 10px;"></div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+
